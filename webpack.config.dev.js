@@ -5,8 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const CssMinimizer = require('css-minimizer-webpack-plugin');
-const TercerPlugin = require('terser-webpack-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 //Modulo de Exports
@@ -16,8 +14,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
-    clean: true,
   },
+  mode: 'development',
   resolve: {
     extensions: ['.js'],
     alias: {
@@ -53,9 +51,8 @@ module.exports = {
         generator: {
           filename: "assets/fonts/[name].[contenthash].[ext]"
         },
-        
   }
-    ],
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -70,17 +67,10 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, "src", "assets/images"),
-          to: "./assets/images"
+          to: "assets/images"
         }
-      ],
+      ]
     }),
     new Dotenv(),
   ],
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new CssMinimizerPlugin(),
-      new TercerPlugin(),
-    ]
-  }
 }

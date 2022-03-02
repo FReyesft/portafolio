@@ -1,19 +1,15 @@
-//Constantes
-
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-const CssMinimizer = require('css-minimizer-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
-
-//Modulo de Exports
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
+    assetModuleFilename: 'assets/images/[hash][ext][query]'
   },
   mode: 'development',
   watch: true,
@@ -48,11 +44,18 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2)$/,
-        type: "asset/resource",
-        generator: {
-          filename: "assets/fonts/[name].[contenthash].[ext]"
-        },
-  }
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            mimetype: "application/font-woff",
+            name: "[name].[contenthash].[ext]",
+            outputPath: "./assets/fonts/",
+            publicPath: "../assets/fonts/",
+            esModule: false,
+          },
+        }
+      }
     ]
   },
   plugins: [

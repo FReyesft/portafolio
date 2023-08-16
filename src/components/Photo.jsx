@@ -6,6 +6,11 @@ export default function Photo () {
   return (
     <>
       <motion.div
+        transition={{ duration: 0.5 }}
+        animate={{
+          scale: [0.5, 1],
+          y: [-150, 0]
+        }}
         className='w-3/3 h-40 flex items-center flex-col'
       >
         <Image

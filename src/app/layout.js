@@ -1,7 +1,7 @@
 import './globals.css'
 import localFont from 'next/font/local'
 import { Providers } from './providers'
-const myFont = localFont({ src: './fonts/Roboto-Regular.ttf' })
+const myFont = localFont({ src: '../fonts/Roboto-Regular.ttf' })
 
 export const metadata = {
   title: 'Create Next App',

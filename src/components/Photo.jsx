@@ -22,7 +22,6 @@ export default function Photo () {
           height={500}
         />
       </motion.div>
-
     </>
   )
 }

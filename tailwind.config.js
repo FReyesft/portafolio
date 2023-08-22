@@ -19,7 +19,6 @@ module.exports = {
     },
     textColor: {
       titles: '#1877F2',
-      background: '#ffed4a',
       danger: '#e3342f',
       secondary: '#383838',
       button: '#18C964'

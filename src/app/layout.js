@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function RootLayout ({ children }) {
   return (
-    <html lang='en'>
-      <body className={myFont.className}>
+    <html className='bg-[#f0f0f0]' lang='en'>
+      <body className={`${myFont.className}`}>
         <Providers>
           {children}
         </Providers>

@@ -18,7 +18,7 @@ export default function Home () {
             scale: [0.5, 1],
             y: [-150, 0]
           }}
-          className='text-center'
+          className='text-center self-center'
         >
           <TituloPrincipal />
           <ButtonDowload />

@@ -8,7 +8,7 @@ import { Divider } from '@nextui-org/react'
 export default function Home () {
   return (
     <main>
-      <section className='flex p-8 h-full items-center justify-between flex-wrap relative'>
+      <section className='flex p-8 h-[50vh] content-center justify-between flex-wrap relative'>
         <HamburguerMenu />
         <Photo />
         {/* Container Titulo y animación de este */}

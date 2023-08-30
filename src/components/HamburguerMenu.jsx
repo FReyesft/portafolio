@@ -9,7 +9,7 @@ export default function HamburguerMenu () {
       <div
         onClick={() => setClicked(!clicked)}
         className={`${
-          clicked ? 'bg-[#f0f0f0]' : ''
+          clicked ? '' : ''
         } ${'fixed top-4 left-4 right-4 w-8 h-8 border-2 rounded-full border-black flex flex-col-reverse justify-center items-center z-10'}`}
       >
         <motion.span

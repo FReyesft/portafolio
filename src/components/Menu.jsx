@@ -8,7 +8,7 @@ export default function Menu () {
       color: '#fff'
     },
 
-    hidden: { opacity: 0, x: '-200px' }
+    hidden: { opacity: 0, x: '-300px' }
   }
   const variants = {
     visible: {
@@ -31,19 +31,19 @@ export default function Menu () {
         initial='hidden'
         animate='visible'
         transition={{ duration: 0.5 }}
-        className='flex justify-center flex-col absolute top-0 left-0 right-0 h-full w-1/2 p-4 container_menu'
+        className='flex justify-center flex-col top-0 left-0 right-0 h-full w-full p-4 container_menu fixed z-30 items-center'
       >
         <motion.li variants={item}>
-          <Link className='text-secondary font-bold' href='#' underline='hover'>Home</Link>
+          <Link className='text-secondary text-3xl m-6 font-bold' href='#' underline='hover'>Home</Link>
         </motion.li>
         <motion.li variants={item}>
-          <Link className='text-secondary font-bold' href='#' underline='hover'>Sobre mi</Link>
+          <Link className='text-secondary text-3xl m-6 font-bold' href='#' underline='hover'>Sobre mi</Link>
         </motion.li>
         <motion.li variants={item}>
-          <Link className='text-secondary font-bold' href='#' underline='hover'>portafolio</Link>
+          <Link className='text-secondary text-3xl m-6 font-bold' href='#' underline='hover'>portafolio</Link>
         </motion.li>
         <motion.li variants={item}>
-          <Link className='text-secondary font-bold' href='#' underline='hover'>Contacto</Link>
+          <Link className='text-secondary text-3xl m-6 font-bold' href='#' underline='hover'>Contacto</Link>
         </motion.li>
       </motion.ul>
     </>

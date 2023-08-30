@@ -1,11 +1,19 @@
 'use client'
+
+/* Import de componentes */
+
 import TituloPrincipal from '../components/TituloPrincipal'
-import Photo from '../components/Photo'
-import { motion } from 'framer-motion'
-import ButtonDowload from '@/components/ButtonDowload'
-import HamburguerMenu from '@/components/HamburguerMenu'
-import { Divider } from '@nextui-org/react'
 import AboutMeCard from '@/components/AboutMeCard'
+import HamburguerMenu from '@/components/HamburguerMenu'
+import ButtonDowload from '@/components/ButtonDowload'
+import Photo from '../components/Photo'
+import CardProyect from '@/components/CardProyect'
+
+/* Import de packages */
+
+import { motion } from 'framer-motion'
+import { Divider } from '@nextui-org/react'
+
 export default function Home () {
   return (
     <main>
@@ -28,6 +36,14 @@ export default function Home () {
       <Divider />
       <section className='p-8 h-[50vh] flex items-center'>
         <AboutMeCard />
+      </section>
+      <Divider />
+
+      {/* Portfolio Section */}
+
+      <section className='p-8 h-full flex flex-col'>
+        <h2 className='text-titles text-2xl font-bold'>Portfolio</h2>
+        <CardProyect />
       </section>
     </main>
   )

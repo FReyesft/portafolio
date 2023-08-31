@@ -17,7 +17,7 @@ import { Divider } from '@nextui-org/react'
 export default function Home () {
   return (
     <main>
-      <section className='flex p-8 h-[50vh] content-center justify-between flex-wrap relative bg-[url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")]'>
+      <section className='flex p-8 h-[50vh] content-center justify-between flex-wrap relative section-home'>
         <HamburguerMenu />
         <Photo />
         {/* Container Titulo y animación de este */}

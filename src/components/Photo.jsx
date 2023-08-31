@@ -16,7 +16,7 @@ export default function Photo () {
         <Image
           className='w-full h-full object-cover rounded-2xl min-w-[160px]'
           alt='logo'
-          src='/../images/foto-recortada.jpg'
+          src='../images/foto-recortada.jpg'
           priority
           width={500}
           height={500}

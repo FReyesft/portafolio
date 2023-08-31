@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 export default function Photo () {
+  const foto = '/../images/foto-recortada.jpg'
   return (
     <>
       <motion.div
@@ -16,7 +17,7 @@ export default function Photo () {
         <Image
           className='w-full h-full object-cover rounded-2xl min-w-[160px]'
           alt='logo'
-          src='/../images/foto-recortada.jpg'
+          src={foto}
           priority
           width={500}
           height={500}

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 export default function Photo () {
-  const foto = '/../images/foto-recortada.png'
+  const foto = '../images/foto-recortada.png'
   return (
     <>
       <motion.div

@@ -7,12 +7,15 @@ export default function CardProyect () {
       title: 'Calculadora',
       image: '../../images/caluladora-web.png',
       link: 'https://freyesft.github.io/calculadora/',
-      linkGitHub: 'https://github.com/FreyesFT/calculadora'
+      linkGitHub: 'https://github.com/FreyesFT/calculadora',
+      iconos: {
+
+      }
     },
     {
       title: 'Triqui',
       image: '../../images/triqui-web.png',
-      link: 'https://freyesft.github.io/triqui/',
+      link: 'https://triqui-wine.vercel.app',
       linkGitHub: 'https://github.com/FreyesFT/calculadora'
     }
   ]
@@ -20,7 +23,7 @@ export default function CardProyect () {
     <>
       {
             portfolio.map((item, index) => (
-              <Card className='py-4 mt-3' key={index}>
+              <Card className='py-4 m-3 max-w-sm' key={index}>
                 <CardHeader className='pb-0 pt-2 px-4 flex-col items-start'>
                   <h4 className='font-bold text-large'>{item.title}</h4>
                   <Divider />

@@ -43,9 +43,11 @@ export default function Home () {
 
       {/* Portfolio Section */}
 
-      <section className='p-8 h-full flex flex-col'>
+      <section className='p-8 h-full'>
         <TitleSecondary props='Portafolio' />
-        <CardProyect />
+        <div className='flex flex-wrap justify-center'>
+          <CardProyect />
+        </div>
       </section>
     </main>
   )

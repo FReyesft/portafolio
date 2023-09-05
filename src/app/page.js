@@ -9,7 +9,7 @@ import HamburguerMenu from '@/components/HamburguerMenu'
 import ButtonDowload from '@/components/ButtonDowload'
 import Photo from '../components/Photo'
 import CardProyect from '@/components/CardProyect'
-
+import ContactMeCard from '@/components/ContactMeCard'
 /* Import de packages */
 
 import { motion } from 'framer-motion'
@@ -48,6 +48,10 @@ export default function Home () {
         <div className='flex flex-wrap justify-center'>
           <CardProyect />
         </div>
+      </section>
+      <section className='p-8 h-[50vh]'>
+        <TitleSecondary props='Contacto' />
+        <ContactMeCard />
       </section>
     </main>
   )

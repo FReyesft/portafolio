@@ -16,6 +16,6 @@
   background-color: rgba(255, 255, 255, 0.46);
 }
 
-.section-home {
-  background-image: url('https://images.pexels.com/photos/7233193/pexels-photo-7233193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+.text-about-me {
+  text-wrap: balance;
 }

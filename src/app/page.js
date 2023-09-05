@@ -3,6 +3,7 @@
 /* Import de componentes */
 
 import TituloPrincipal from '../components/TituloPrincipal'
+import TitleSecondary from '@/components/TitleSecondary'
 import AboutMeCard from '@/components/AboutMeCard'
 import HamburguerMenu from '@/components/HamburguerMenu'
 import ButtonDowload from '@/components/ButtonDowload'
@@ -34,7 +35,8 @@ export default function Home () {
         </motion.div>
       </section>
       <Divider />
-      <section className='p-8 h-[50vh] flex items-center'>
+      <section className='p-8 h-[full] flex flex-col justify-center'>
+        <TitleSecondary props='Sobre mi' />
         <AboutMeCard />
       </section>
       <Divider />
@@ -42,7 +44,7 @@ export default function Home () {
       {/* Portfolio Section */}
 
       <section className='p-8 h-full flex flex-col'>
-        <h2 className='text-titles text-2xl font-bold'>Portfolio</h2>
+        <TitleSecondary props='Portafolio' />
         <CardProyect />
       </section>
     </main>

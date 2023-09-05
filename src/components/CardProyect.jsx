@@ -8,16 +8,21 @@ export default function CardProyect () {
       image: '../../images/caluladora-web.png',
       link: 'https://freyesft.github.io/calculadora/',
       linkGitHub: 'https://github.com/FreyesFT/calculadora',
-      iconos: {
-
-      }
+      iconos: [
+        <BiLogoHtml5 className='text-[#E34F26]' key={1} />,
+        <BiLogoCss3 key={2} className='text-[#2965F1]' />,
+        <BiLogoJavascript key={3} className='text-[#f7df1e]' />]
     },
     {
       title: 'Triqui',
       image: '../../images/triqui-web.png',
       link: 'https://triqui-wine.vercel.app',
-      linkGitHub: 'https://github.com/FreyesFT/calculadora'
-    }
+      linkGitHub: 'https://github.com/FreyesFT/calculadora',
+      iconos: [
+        <BiLogoHtml5 className='text-[#E34F26]' key={1} />,
+        <BiLogoCss3 key={2} className='text-[#2965F1]' />,
+        <BiLogoJavascript key={3} className='text-[#f7df1e]' />]
+    },
   ]
   return (
     <>
@@ -25,21 +30,21 @@ export default function CardProyect () {
             portfolio.map((item, index) => (
               <Card className='py-4 m-3 max-w-sm' key={index}>
                 <CardHeader className='pb-0 pt-2 px-4 flex-col items-start'>
-                  <h4 className='font-bold text-large'>{item.title}</h4>
+                  <h4 className='font-bold text-large'>{item?.title}</h4>
                   <Divider />
                   <small className='flex text-3xl w-full'>
-                    <BiLogoJavascript className='text-[#f7df1e]' />
-                    <BiLogoHtml5 className='text-[#E34C26]' />
-                    <BiLogoCss3 className='text-[#264de4]' />
+                    {
+                      item?.iconos
+                    }
                   </small>
                 </CardHeader>
-                <Link href={item.link} target='_blank' rel='noreferrer'>
+                <Link href={item?.link} target='_blank' rel='noreferrer'>
                   <CardBody className='overflow-visible py-2'>
                     <Image
                       isZoomed
                       className='w-full'
                       layout='responsive'
-                      src={item.image}
+                      src={item?.image}
                       alt='Card background'
                     />
                   </CardBody>

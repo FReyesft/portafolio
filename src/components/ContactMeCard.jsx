@@ -1,4 +1,4 @@
-import { Card, CardBody, Button } from '@nextui-org/react'
+import { Card, CardBody, Button, Input } from '@nextui-org/react'
 import { BiSolidSend } from 'react-icons/bi'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
@@ -24,14 +24,34 @@ export default function App () {
     >
       <CardBody>
         <form className='flex flex-col' ref={form} onSubmit={sendEmail}>
-          <label className='mt-3 text-sm w-full' htmlFor='name'>Name:</label>
-          <input className='mt-3 w-full text-xs p-2 rounded-md border border-[#18C964] outline-none focus:shadow-xl' placeholder='Ejm: Fernando' type='text' id='name' name='user_name' />
-
-          <label className='mt-3 text-sm w-full' htmlFor='email'>Email:</label>
-          <input className='mt-3 w-full text-xs p-2 rounded-md border border-[#18C964] outline-none focus:shadow-xl' placeholder='Ejm: fernando@gmail.com' type='email' id='email' name='user_email' />
-
-          <label className='mt-3 text-sm' htmlFor='message'>Message:</label>
-          <textarea id='message' className='resize-none mt-3 w-full text-xs p-2 rounded-md border border-[#18C964] outline-none focus:shadow-xl' placeholder='Ejm: Lorem ipsum placeholder message' name='message' />
+          <Input
+            name='user_name'
+            variant='underlined'
+            isRequired
+            type='text'
+            label='Nombre'
+            className='w-full mt-3'
+            color='success'
+          />
+          <Input
+            name='user_email'
+            variant='underlined'
+            isRequired
+            type='email'
+            label='Email'
+            className='w-full mt-3'
+            color='success'
+          />
+          <Input
+            name='message'
+            variant='underlined'
+            isRequired
+            type='text'
+            label='Mensaje'
+            className='w-full mt-3'
+            placeholder='Enter your message'
+            color='success'
+          />
           <Button
             className='h-4 text-sm p-4 mt-5 italic w-1/2 self-center'
             value='Send'

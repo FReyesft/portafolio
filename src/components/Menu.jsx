@@ -40,7 +40,7 @@ export default function Menu () {
           <Link className='text-secondary text-3xl m-6 font-bold' href='#' underline='hover'>Sobre mi</Link>
         </motion.li>
         <motion.li variants={item}>
-          <Link className='text-secondary text-3xl m-6 font-bold' href='#' underline='hover'>portafolio</Link>
+          <Link className='text-secondary text-3xl m-6 font-bold' href='#' underline='hover'>Portafolio</Link>
         </motion.li>
         <motion.li variants={item}>
           <Link className='text-secondary text-3xl m-6 font-bold' href='#' underline='hover'>Contacto</Link>

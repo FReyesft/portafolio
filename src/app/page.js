@@ -18,7 +18,7 @@ import { Divider } from '@nextui-org/react'
 export default function Home () {
   return (
     <main>
-      <section className='flex p-8 h-[50vh] content-center justify-between flex-wrap relative section-home'>
+      <section className='flex p-8 h-[50vh] content-center justify-evenly md:flex-row-reverse md:h-screen flex-wrap relative section-home'>
         <HamburguerMenu />
         <Photo />
         {/* Container Titulo y animación de este */}
@@ -40,6 +40,12 @@ export default function Home () {
         <AboutMeCard />
       </section>
       <Divider />
+      {/* Contact Me section */}
+
+      <section className='p-8 flex justify-center flex-col h-auto'>
+        <TitleSecondary props='Contacto' />
+        <ContactMeCard />
+      </section>
 
       {/* Portfolio Section */}
 
@@ -48,10 +54,6 @@ export default function Home () {
         <div className='flex flex-wrap justify-center'>
           <CardProyect />
         </div>
-      </section>
-      <section className='p-8 h-[50vh]'>
-        <TitleSecondary props='Contacto' />
-        <ContactMeCard />
       </section>
     </main>
   )

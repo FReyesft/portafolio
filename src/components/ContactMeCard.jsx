@@ -19,7 +19,7 @@ export default function App () {
   return (
     <Card
       isBlurred
-      className='border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[710px] self-center mt-3'
+      className='border-none bg-background/60 dark:bg-default-100/50 w-full max-w-[710px] mt-3'
       shadow='sm'
     >
       <CardBody>

@@ -35,21 +35,25 @@ export default function Home () {
         </motion.div>
       </section>
       <Divider />
-      <section className='p-8 h-[full] flex flex-col justify-center'>
+
+      {/* About Me Section */}
+
+      <section className='p-8 flex flex-col items-center text-center'>
         <TitleSecondary props='Sobre mi' />
         <AboutMeCard />
       </section>
       <Divider />
       {/* Contact Me section */}
 
-      <section className='p-8 flex justify-center flex-col h-auto'>
+      <section className='p-8 flex flex-col items-center'>
         <TitleSecondary props='Contacto' />
         <ContactMeCard />
       </section>
 
+      <Divider />
       {/* Portfolio Section */}
 
-      <section className='p-8 h-full'>
+      <section className='p-8 flex flex-col items-center'>
         <TitleSecondary props='Portafolio' />
         <div className='flex flex-wrap justify-center'>
           <CardProyect />

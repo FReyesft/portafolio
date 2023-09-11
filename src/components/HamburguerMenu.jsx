@@ -10,7 +10,7 @@ export default function HamburguerMenu () {
         onClick={() => setClicked(!clicked)}
         className={`${
           clicked ? '' : ''
-        } ${'fixed top-4 left-4 right-4 w-8 h-8 border-2 rounded-full border-black flex flex-col-reverse justify-center items-center z-40'}`}
+        } ${'hover:cursor-pointer fixed top-4 left-4 right-4 w-8 h-8 border-2 rounded-full border-black flex flex-col-reverse justify-center items-center z-40 md:w-12 md:h-12'}`}
       >
         <motion.span
           animate={{
@@ -21,7 +21,7 @@ export default function HamburguerMenu () {
           whileHover={{
             scale: 1.1
           }}
-          className='m-[2px] w-4 h-[2px] bg-black rounded-sm'
+          className='m-[2px] w-6 h-[2px] bg-black rounded-sm'
         />
         <motion.span
           animate={{
@@ -32,7 +32,7 @@ export default function HamburguerMenu () {
           whileHover={{
             scale: 1.1
           }}
-          className='m-[2px] w-4 h-[2px] bg-black rounded-sm'
+          className='m-[2px] w-6 h-[2px] bg-black rounded-sm'
         />
         <motion.span
           animate={{
@@ -43,7 +43,7 @@ export default function HamburguerMenu () {
           whileHover={{
             scale: 1.1
           }}
-          className='m-[2px] w-4 h-[2px] bg-black rounded-sm'
+          className='m-[2px] w-6 h-[2px] bg-black rounded-sm'
         />
       </div>
       {clicked

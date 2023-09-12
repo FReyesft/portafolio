@@ -1,6 +1,7 @@
 import { Card, CardBody, Button, Input, CardFooter } from '@nextui-org/react'
+import { BiLogoLinkedin, BiSolidSend, BiLogoWhatsapp, BiLogoGithub } from 'react-icons/bi'
+import Link from 'next/link'
 
-import { BiSolidSend } from 'react-icons/bi'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import toast from 'react-hot-toast'
@@ -54,7 +55,7 @@ export default function App () {
             color='success'
           />
           <Button
-            className='h-4 text-sm p-4 mt-5 italic w-1/2 self-center'
+            className='h-4 text-sm p-4 mt-8 italic w-1/2 self-center'
             value='Send'
             type='submit'
             color='success'
@@ -63,7 +64,17 @@ export default function App () {
           >Submit
           </Button>
         </form>
-        <CardFooter className='flex flex-col justify-center items-center' />
+        <CardFooter className='flex justify-center items-center'>
+          <Link href='https://www.linkedin.com/in/fernando-reyez-pinto-2a19b9260/' className='mr-3 ml-3 hover:scale-125'>
+            <BiLogoLinkedin className='text-3xl text-[#0e76a8]' />
+          </Link>
+          <Link href='https://wa.me/+573142325833/?text=Enviame un mensaje' className='mr-3 ml-3 hover:scale-125 '>
+            <BiLogoWhatsapp className='text-3xl text-[#25D366] ' />
+          </Link>
+          <Link href='https://github.com/FReyesft' className='mr-3 ml-3 hover:scale-125'>
+            <BiLogoGithub className='text-3xl text-[#24292e]' />
+          </Link>
+        </CardFooter>
       </CardBody>
     </Card>
   )

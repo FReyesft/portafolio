@@ -47,7 +47,7 @@ export default function Home () {
       {/* Contact Me section */}
 
       <section className='p-8 flex flex-col items-center'>
-        <TitleSecondary props='Contacto' />
+        <TitleSecondary props='Contratame' />
         <ContactMeCard />
       </section>
 

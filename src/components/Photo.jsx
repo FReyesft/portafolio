@@ -11,7 +11,7 @@ export default function Photo () {
           scale: [0.5, 1],
           y: [-150, 0]
         }}
-        className='flex w-1/2 h-1/2 justify-center items-center'
+        className='flex h-1/2 justify-center items-center'
       >
         <Image
           className='object-cover'

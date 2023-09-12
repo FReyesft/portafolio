@@ -1,27 +1,11 @@
-'use client'
-import { Image } from '@nextui-org/react'
-import { motion } from 'framer-motion'
+import Image from 'next/image'
+import profilePic from '../../public/images/foto-recortada.png'
 
-export default function Photo () {
+export default function Page () {
   return (
-    <>
-      <motion.div
-        transition={{ duration: 0.5 }}
-        animate={{
-          scale: [0.5, 1],
-          y: [-150, 0]
-        }}
-        className='flex h-1/2 justify-center items-center'
-      >
-        <Image
-          className='object-cover'
-          alt='logo'
-          src='../images/foto-recortada.png'
-          priority='true'
-          width={500}
-          height={500}
-        />
-      </motion.div>
-    </>
+    <Image
+      src={profilePic}
+      alt='Picture of the author'
+    />
   )
 }

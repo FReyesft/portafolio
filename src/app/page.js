@@ -19,7 +19,7 @@ export default function Home () {
   return (
     <main>
       <Toaster />
-      <section id='homeSection' className='p-8 flex flex-row gap-3 w-full h-[50vh] justify-evenly items-center md:flex-row-reverse md:h-screen '>
+      <section id='homeSection' className='p-8 flex flex-row gap-3 w-full h-[50vh] justify-around items-center md:flex-row-reverse md:h-screen '>
         <HamburguerMenu />
         <Photo />
         {/* Container Titulo y animación de este */}

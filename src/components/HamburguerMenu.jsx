@@ -21,7 +21,7 @@ export default function HamburguerMenu () {
           whileHover={{
             scale: 1.1
           }}
-          className='m-[2px] w-6 h-[2px] bg-black rounded-sm'
+          className='m-[2px] w-4 md:w-6 h-[2px] bg-black rounded-sm'
         />
         <motion.span
           animate={{
@@ -32,7 +32,7 @@ export default function HamburguerMenu () {
           whileHover={{
             scale: 1.1
           }}
-          className='m-[2px] w-6 h-[2px] bg-black rounded-sm'
+          className='m-[2px] w-4 md:w-6 h-[2px] bg-black rounded-sm'
         />
         <motion.span
           animate={{
@@ -43,7 +43,7 @@ export default function HamburguerMenu () {
           whileHover={{
             scale: 1.1
           }}
-          className='m-[2px] w-6 h-[2px] bg-black rounded-sm'
+          className='m-[2px] w-4 md:w-6 h-[2px] bg-black rounded-sm'
         />
       </div>
       {clicked

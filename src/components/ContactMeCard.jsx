@@ -1,4 +1,5 @@
-import { Card, CardBody, Button, Input } from '@nextui-org/react'
+import { Card, CardBody, Button, Input, CardFooter } from '@nextui-org/react'
+
 import { BiSolidSend } from 'react-icons/bi'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
@@ -62,6 +63,7 @@ export default function App () {
           >Submit
           </Button>
         </form>
+        <CardFooter className='flex flex-col justify-center items-center' />
       </CardBody>
     </Card>
   )

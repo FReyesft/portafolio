@@ -1,9 +1,8 @@
 'use client'
-import Image from 'next/image'
+import { Image } from '@nextui-org/react'
 import { motion } from 'framer-motion'
 
 export default function Photo () {
-  const foto = '/../images/foto-recortada.png'
   return (
     <>
       <motion.div
@@ -12,13 +11,13 @@ export default function Photo () {
           scale: [0.5, 1],
           y: [-150, 0]
         }}
-        className='w-3/3 h-40 flex items-center flex-col sm:w-1/2 sm:h-1/2 md:w-1/3 md:h-2/3'
+        className='flex w-1/2 h-1/2 justify-center items-center'
       >
         <Image
-          className='w-full h-full object-cover rounded-2xl min-w-[160px]'
+          className='object-cover'
           alt='logo'
-          src={foto}
-          priority
+          src='../images/foto-recortada.png'
+          priority='true'
           width={500}
           height={500}
         />

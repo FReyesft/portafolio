@@ -1,7 +1,7 @@
 'use client'
 
 /* Import de componentes */
-
+import { Toaster } from 'react-hot-toast'
 import TituloPrincipal from '../components/TituloPrincipal'
 import TitleSecondary from '@/components/TitleSecondary'
 import AboutMeCard from '@/components/AboutMeCard'
@@ -18,6 +18,7 @@ import { Divider } from '@nextui-org/react'
 export default function Home () {
   return (
     <main>
+      <Toaster />
       <section className='flex p-8 h-[50vh] content-center justify-evenly md:flex-row-reverse md:h-screen flex-wrap relative section-home'>
         <HamburguerMenu />
         <Photo />

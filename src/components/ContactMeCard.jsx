@@ -2,18 +2,18 @@ import { Card, CardBody, Button, Input } from '@nextui-org/react'
 import { BiSolidSend } from 'react-icons/bi'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-
+import toast from 'react-hot-toast'
 export default function App () {
   const form = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault()
-
     emailjs.sendForm('service_mlwjxmr', 'template_kvuv1g4', form.current, 'cqhm42JADe_4NAsfh')
-      .then((result) => {
-        console.log(result.text)
+      .then(() => {
+        toast.success('Tu mensaje ha sido enviado correctamente')
       }, (error) => {
         console.log(error.text)
+        toast.error('Tu mensaje no ha podido ser enviado')
       })
   }
   return (

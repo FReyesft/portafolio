@@ -19,7 +19,7 @@ export default function Home () {
   return (
     <main>
       <Toaster />
-      <section className='flex p-8 h-[50vh] content-center justify-evenly md:flex-row-reverse md:h-screen flex-wrap relative section-home'>
+      <section id='homeSection' className='flex p-8 h-[50vh] content-center justify-evenly md:flex-row-reverse md:h-screen flex-wrap relative section-home'>
         <HamburguerMenu />
         <Photo />
         {/* Container Titulo y animación de este */}
@@ -39,14 +39,15 @@ export default function Home () {
 
       {/* About Me Section */}
 
-      <section className='p-8 flex flex-col items-center text-center'>
+      <section id='aboutMeSection' className='p-8 flex flex-col items-center text-center'>
         <TitleSecondary props='Sobre mi' />
         <AboutMeCard />
       </section>
       <Divider />
+
       {/* Contact Me section */}
 
-      <section className='p-8 flex flex-col items-center'>
+      <section id='contactSection' className='p-8 flex flex-col items-center'>
         <TitleSecondary props='Contratame' />
         <ContactMeCard />
       </section>
@@ -54,7 +55,7 @@ export default function Home () {
       <Divider />
       {/* Portfolio Section */}
 
-      <section className='p-8 flex flex-col items-center'>
+      <section id='portfolioSection' className='p-8 flex flex-col items-center'>
         <TitleSecondary props='Portafolio' />
         <div className='flex flex-wrap justify-center'>
           <CardProyect />

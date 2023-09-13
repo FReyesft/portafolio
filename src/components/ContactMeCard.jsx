@@ -65,13 +65,13 @@ export default function App () {
           </Button>
         </form>
         <CardFooter className='flex justify-center items-center'>
-          <Link href='https://www.linkedin.com/in/fernando-reyez-pinto-2a19b9260/' className='p-1 mr-2 ml-2 hover:scale-125 shadow-md'>
+          <Link href='https://www.linkedin.com/in/fernando-reyez-pinto-2a19b9260/' target=' _blank' className='p-1 mr-2 ml-2 hover:scale-125 shadow-md'>
             <BiLogoLinkedin className='text-3xl text-[#0e76a8]' />
           </Link>
-          <Link href='https://wa.me/+573142325833/?text=Enviame un mensaje' className='p-1 mr-2 ml-2 hover:scale-125  shadow-md'>
+          <Link href='https://wa.me/+573142325833/?text=Enviame un mensaje' target=' _blank' className='p-1 mr-2 ml-2 hover:scale-125  shadow-md'>
             <BiLogoWhatsapp className='text-3xl text-[#25D366] ' />
           </Link>
-          <Link href='https://github.com/FReyesft' className='p-1 mr-2 ml-2 hover:scale-125 shadow-md'>
+          <Link href='https://github.com/FReyesft' target=' _blank' className='p-1 mr-2 ml-2 hover:scale-125 shadow-md'>
             <BiLogoGithub className='text-3xl text-[#24292e]' />
           </Link>
         </CardFooter>

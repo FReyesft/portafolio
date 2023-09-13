@@ -6,6 +6,7 @@ export default function Page () {
     <Image
       src={profilePic}
       alt='Picture of the author'
+      className='rounded-xl w-1/2 sm:w-[343px] md:w-1/3 object-cover'
     />
   )
 }

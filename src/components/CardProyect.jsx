@@ -1,5 +1,6 @@
 import { Divider, Card, CardHeader, CardBody, Image, CardFooter, Link } from '@nextui-org/react'
-import { BiLogoJavascript, BiLogoHtml5, BiLogoCss3, BiLogoReact } from 'react-icons/bi'
+import { BiLogoJavascript, BiLogoHtml5, BiLogoCss3, BiLogoReact, BiLogoTailwindCss } from 'react-icons/bi'
+import { TbBrandNextjs } from 'react-icons/tb'
 
 export default function CardProyect () {
   const portfolio = [
@@ -23,6 +24,19 @@ export default function CardProyect () {
         <BiLogoCss3 key={2} className='text-[#2965F1] drop-shadow-md' />,
         <BiLogoJavascript key={3} className='text-[#f7df1e] drop-shadow-md' />,
         <BiLogoReact key={4} className='text-[#61DBFB] drop-shadow-md' />
+      ]
+    },
+    {
+      title: 'Portafolio',
+      image: '../../images/img_portfolio_web.png',
+      link: 'https://portafolio-mauve-three.vercel.app/',
+      linkGitHub: 'https://github.com/FReyesft/portafolio',
+      iconos: [
+        <BiLogoHtml5 className='text-[#E34F26] drop-shadow-md' key={1} />,
+        <BiLogoTailwindCss key={2} className='text-[#2965F1] drop-shadow-md' />,
+        <BiLogoJavascript key={3} className='text-[#f7df1e] drop-shadow-md' />,
+        <BiLogoReact key={4} className='text-[#61DBFB] drop-shadow-md' />,
+        <TbBrandNextjs key={5} className='text-[#0070f3]  drop-shadow-md' />
       ]
     }
   ]

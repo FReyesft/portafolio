@@ -72,10 +72,10 @@ export default function App() {
           />
           <Button
             className="h-4 text-sm p-4 mt-8 italic w-1/2 self-center"
+            size='md'
             value="Send"
             type="submit"
             color="success"
-            variant="shadow"
             startContent={<BiSolidSend />}>
             Enviar
           </Button>

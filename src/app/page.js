@@ -10,6 +10,7 @@ import ButtonDowload from '@/components/ButtonDowload'
 import Photo from '../components/Photo'
 import CardProyect from '@/components/CardProyect'
 import ContactMeCard from '@/components/ContactMeCard'
+import MiWorkExperience from '@/components/MiWorkExperience'
 import { useState } from 'react'
 /* Import de packages */
 
@@ -46,6 +47,14 @@ export default function Home () {
         <AboutMeCard />
       </section>
       <Divider />
+
+      {/* Work Section */}
+
+      <section id='contactSection' className='p-8 flex flex-col items-center'>
+        <TitleSecondary props='Mi Experiencia' />
+        <MiWorkExperience/>
+      </section>
+      <Divider/>
 
       {/* Contact Me section */}
 

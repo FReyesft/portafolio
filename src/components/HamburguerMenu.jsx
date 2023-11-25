@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Menu from "./Menu";
 import { useState } from "react";
-import { useContext } from "react";
 export default function HamburguerMenu() {
   const [clicked, setClicked] = useState(false);
   return (
@@ -46,7 +45,7 @@ export default function HamburguerMenu() {
           className="m-[2px] w-4 md:w-6 h-[2px] bg-black rounded-sm"
         />
       </div>
-      {clicked ? <Menu /> : ""}
+      {clicked ? <Menu setClicked={setClicked }/> : ""}
     </>
   );
 }

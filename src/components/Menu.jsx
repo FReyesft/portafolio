@@ -1,17 +1,18 @@
 import { Link } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { useState } from "react";
-export default function Menu() {
-  const [clicked, setClicked] = useState(true);
+
+export default function Menu({ setClicked }) {
+  const [clicked, setLocalClicked] = useState(true);
   const item = {
     visible: {
       opacity: 1,
       x: 0,
       color: "#fff",
     },
-
     hidden: { opacity: 0, x: "-300px" },
   };
+
   const variants = {
     visible: {
       opacity: 1,
@@ -26,6 +27,7 @@ export default function Menu() {
       opacity: 1,
     },
   };
+
   return (
     <>
       {clicked ? (
@@ -39,6 +41,7 @@ export default function Menu() {
           <motion.li variants={item}>
             <Link
               onClick={() => {
+                setLocalClicked(!clicked);
                 setClicked(!clicked);
               }}
               className="text-secondary text-3xl m-6 font-bold"
@@ -51,6 +54,7 @@ export default function Menu() {
           <motion.li variants={item}>
             <Link
               onClick={() => {
+                setLocalClicked(!clicked);
                 setClicked(!clicked);
               }}
               className="text-secondary text-3xl m-6 font-bold"
@@ -63,6 +67,7 @@ export default function Menu() {
           <motion.li variants={item}>
             <Link
               onClick={() => {
+                setLocalClicked(!clicked);
                 setClicked(!clicked);
               }}
               className="text-secondary text-3xl m-6 font-bold"
@@ -75,6 +80,7 @@ export default function Menu() {
           <motion.li variants={item}>
             <Link
               onClick={() => {
+                setLocalClicked(!clicked);
                 setClicked(!clicked);
               }}
               className="text-secondary text-3xl m-6 font-bold"

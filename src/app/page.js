@@ -10,17 +10,19 @@ import ButtonDowload from '@/components/ButtonDowload'
 import Photo from '../components/Photo'
 import CardProyect from '@/components/CardProyect'
 import ContactMeCard from '@/components/ContactMeCard'
+import { useState } from 'react'
 /* Import de packages */
 
 import { motion } from 'framer-motion'
 import { Divider } from '@nextui-org/react'
 
 export default function Home () {
+  const [clicked, setClicked] = useState(false);
   return (
     <main>
       <Toaster />
       <section id='homeSection' className='p-8 flex flex-row gap-3 w-full h-[50vh] justify-around items-center md:flex-row-reverse md:h-screen '>
-        <HamburguerMenu />
+        <HamburguerMenu clicked={clicked} setClicked={clicked}/>
         <Photo />
         {/* Container Titulo y animación de este */}
         <motion.div

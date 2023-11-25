@@ -1,15 +1,10 @@
-import { FiDownload } from 'react-icons/fi'
-import { Button } from '@nextui-org/react'
+import { FiDownload } from 'react-icons/fi';
+import { Button } from '@nextui-org/react';
 
-export default function ButtonDowload () {
+export default function ButtonDowload() {
   return (
-    <Button
-      className='h-4 text-[10px] p-4 mt-5 italic md:h-10 md:text-[15px]'
-      startContent={<FiDownload />}
-      color='success'
-      variant='shadow'
-    >
-      Descargar HV
-    </Button>
-  )
+    <a href="/developerHV.pdf" download="mi-archivo.pdf">
+      <Button color='success' startContent={<FiDownload/>} className='m-5'>Descargar HV</Button> 
+    </a>
+  );
 }
